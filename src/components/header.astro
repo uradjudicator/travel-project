@@ -1,0 +1,94 @@
+---
+import AirplaneIcon from "../assets/icons/airplane.png";
+import BrandLogo from "../assets/icons/brand-logo.png";
+import BedIcon from "../assets/icons/icon_bed.png";
+---
+
+<header>
+  <div class="container">
+    <div class="part-header">
+      <div class="flights">
+        
+            <a href="" class="flight">
+          <img src={AirplaneIcon} alt="" class="icon" />
+          <p class="about-flight">Find Flight</p>
+        </a>
+        <a href="" class="flight">
+          <img src={BedIcon} alt="" class="icon" />
+          <p class="about-stay">Find Stays</p>
+    </a>
+      </div>
+      <div class="brand-logo">
+        <img src={BrandLogo} alt="" />
+      </div>
+      <div class="registration">
+        <button class="login">Login</button>
+        <button class="sign-up">Sign up</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style lang="scss">
+  @import "../assets/styles/normolize.scss";
+
+  header {
+    .part-header {
+      padding: 24px 32px;
+      background: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .flights {
+        display: flex;
+
+        .flight {
+          display: flex;
+          align-items: center;
+          margin-right: 4px;
+          color: #fff;
+          margin-right: 32px;
+
+          .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+          }
+          .about-flight {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+      .registration {
+        .login {
+          color: #fff;
+          font-size: 14px;
+          background-color: transparent;
+          font-weight: 600;
+          padding: 10px 24px;
+          transition: 0.2s;
+          &:hover {
+            background: #fff;
+            color: #000;
+            border-radius: 8px;
+          }
+        }
+        .sign-up {
+          color: #fff;
+          background-color: transparent;
+          font-size: 14px;
+          font-weight: 600;
+          transition: 0.3s;
+          padding: 10px 24px;
+          &:hover {
+            background: #fff;
+            color: #000;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+</style>
