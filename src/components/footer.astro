@@ -1,8 +1,9 @@
 ---
 import Mailbox from "../assets/images/mailbox.png";
+import BrandLogo from "../assets/icons/brand-logo.png";
 ---
 
-<footer>
+<footer class="up-side">
   <div class="container">
     <!-- FOOTER TOP -->
     <div class="footer-top">
@@ -23,19 +24,99 @@ import Mailbox from "../assets/images/mailbox.png";
         <img src={Mailbox} alt="" />
       </div>
     </div>
-    <!-- FOOTER DOWN -->
-    <div class="footer-down">
+   
+  </div>
+  
+</div>
+</footer>
 
+<footer class="down-side">
+  <div class="container">
+     <!-- FOOTER DOWN -->
+     <div class="footer-down">
+      <div class="connect">
+        <div class="logo-img">
+          <img src={BrandLogo} alt="" class="logo" />
+        </div>
+        <div class="sci">
+          <a href="" class="sci-link">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="" class="sci-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="sci-link">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="" class="sci-link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <!-- wrapper -->
+      <div class="wrapper">
+        <!-- block -->
+        <div class="block">
+          <p class="header">Our Destinations</p>
+          <div class="info">
+            <p class="text">Canada</p>
+            <p class="text">Alaksa</p>
+            <p class="text">France</p>
+            <p class="text">Iceland</p>
+          </div>
+        </div>
+        <!-- block -->
+        <div class="block">
+          <p class="header">Our Activities</p>
+          <div class="info">
+            <p class="text">Northern Lights</p>
+            <p class="text">Cruising & sailing</p>
+            <p class="text">Multi-activities</p>
+            <p class="text">Kayaing</p>
+          </div>
+        </div>
+        <!-- block -->
+        <div class="block">
+          <p class="header">Travel Blogs</p>
+          <div class="info">
+            <p class="text">Bali Travel Guide</p>
+            <p class="text">Sri Lanks Travel Guide</p>
+            <p class="text">Peru Travel Guide</p>
+            <p class="text">Bali Travel Guide</p>
+          </div>
+        </div>
+        <!-- block -->
+        <div class="block">
+          <p class="header">About Us</p>
+          <div class="info">
+            <p class="text">Our Story</p>
+            <p class="text">Work with us</p>
+          </div>
+        </div>
+        <!-- block -->
+        <div class="block">
+          <p class="header">Contact Us</p>
+          <div class="info">
+            <p class="text">Our Story</p>
+            <p class="text">Work with us</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 </footer>
 
 <style lang="scss">
   @import "../assets/styles/normolize.scss";
-  footer {
-    background: #cdeae1;
-    border-radius: 20px;
+  .up-side {
+    position: relative;
+    top: 152px;
+    
+    font-family: 'Montserrat';
     .footer-top {
+      border-radius: 20px;
+      background: #cdeae1;
       display: flex;
       justify-content: space-between;
       padding-right: 24px;
@@ -82,10 +163,58 @@ import Mailbox from "../assets/images/mailbox.png";
           }
         }
       }
-      .image{
+      .image {
         max-width: 400px;
-        // padding-right: 10px;
       }
     }
   }
+  .down-side{
+    background-color: var(--mint-green, #8dd3bb);
+    padding: 184px 0 64px 0;
+    .footer-down {
+      display: flex;
+      padding: 64px 0;
+
+      .connect {
+        display: flex;
+        flex-direction: column;
+        .logo-img {
+          width: 120px;
+          margin-bottom: 24px;
+          img {
+            max-width: 100%;
+          }
+        }
+        a {
+          color: #000;
+          margin-right: 11px;
+        }
+      }
+      .wrapper {
+        margin-left: 140px;
+        display: flex;
+        .block {
+          text-align: left;
+          margin-left: 50px;
+          .header {
+            color: #112211;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            .text {
+              margin-bottom: 12px;
+              font-size: 14px;
+              font-weight: 500;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+    }
+  }
+
 </style>
