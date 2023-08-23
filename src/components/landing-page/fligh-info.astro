@@ -74,12 +74,15 @@
       .flights {
         display: flex;
         gap: 32px;
+        align-items: center;
         .flight-1 {
           display: flex;
           color: #112211;
+          padding-bottom: 5px;
 
           &:hover {
             border-bottom: 3px solid #8dd3bb;
+            
           }
           p {
             font-size: 16px;
@@ -87,15 +90,16 @@
             margin-left: 8px;
           }
         }
-        // .content::after {
-        //   content: "";
-        //   width: 10px;
-        //   height: 48px;
-        //   color: #333;
-        // }
+        .content {
+          background: #d7e2ee;
+          width: 1px;
+          height: 48px;
+        }
+
         .flight-2 {
           display: flex;
           color: #112211;
+          padding-bottom: 5px;
 
           &:hover {
             border-bottom: 3px solid #8dd3bb;
