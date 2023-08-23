@@ -1,0 +1,119 @@
+---
+---
+
+<section class="flight-info">
+  <div class="container">
+    <div class="wrapper">
+      <div class="flights">
+        <a href="" class="flight-1">
+          <i class="fa-solid fa-plane"></i>
+          <p class="about-flight">Find Flight</p>
+        </a>
+        <div class="content"></div>
+        <a href="" class="flight-2">
+          <i class="fa-solid fa-bed"></i>
+          <p class="about-stay">Find Stays</p>
+        </a>
+      </div>
+
+      <!-- inputs -->
+
+      <div class="inputs">
+        <!-- input-info -->
+        <div class="input-info">
+          <p class="text">From - To</p>
+          <input type="text" name="" placeholder="Lahore - Karachi" />
+          <i class="fa-solid fa-right-left"></i>
+        </div>
+        <!-- input-info -->
+        <div class="input-info">
+          <p class="text">Trip</p>
+          <input type="text" name="" placeholder="Return" />
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <!-- input-info -->
+        <div class="input-info">
+          <p class="text">Depart- Return</p>
+          <input type="date" name="" placeholder="07 Nov 22 - 13 Nov 22" />
+        </div>
+        <!-- input-info -->
+        <div class="input-info">
+          <p class="text">Passenger - Class</p>
+          <input type="text" name="" placeholder="1 Passenger, Economy" />
+        </div>
+      </div>
+
+      <!-- show-flight -->
+      <div class="additional-buttons">
+        <div class="promo-code">
+          <i class="fa-solid fa-plus"></i>
+          <p class="text">Add Promo Code</p>
+        </div>
+        <div class="seeing-flight">
+          <i class="fa-solid fa-paper-plane"></i>
+          <p class="text">Show Filghts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/normolize.scss";
+  .flight-info {
+    padding: 16px 32px 32px 32px;
+    gap: 32px;
+    border-radius: 16px;
+    background: var(--neutrals, #fff);
+    box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .flights {
+        display: flex;
+        gap: 32px;
+        .flight-1 {
+          display: flex;
+          color: #112211;
+
+          &:hover {
+            border-bottom: 3px solid #8dd3bb;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 8px;
+          }
+        }
+        // .content::after {
+        //   content: "";
+        //   width: 10px;
+        //   height: 48px;
+        //   color: #333;
+        // }
+        .flight-2 {
+          display: flex;
+          color: #112211;
+
+          &:hover {
+            border-bottom: 3px solid #8dd3bb;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 600;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    .inputs {
+      margin: 62px 0 32px;
+      display: flex;
+    }
+    .additional-buttons {
+      display: flex;
+    }
+  }
+</style>

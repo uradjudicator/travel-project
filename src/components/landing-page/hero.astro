@@ -1,0 +1,132 @@
+---
+import BrandLogo from "../../assets/icons/brand-logo.png";
+---
+
+<section class="hero">
+  <div class="container">
+    <header>
+      <div class="container">
+        <div class="part-header">
+          <div class="flights">
+            <a href="" class="flight">
+              <i class="fa-solid fa-plane"></i>
+              <p class="about-flight">Find Flight</p>
+            </a>
+            <a href="" class="flight">
+              <i class="fa-solid fa-bed"></i>
+              <p class="about-stay">Find Stays</p>
+            </a>
+          </div>
+          <div class="brand-logo">
+            <img src={BrandLogo} alt="" />
+          </div>
+          <div class="registration">
+            <button class="login">Login</button>
+            <button class="sign-up">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <h3 class="top-title">Helping Others</h3>
+    <h1 class="title">Live & Travel</h1>
+    <p class="text">Special offers to suit your plan</p>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/normolize.scss";
+  .hero {
+    height: 100vh;
+    background-image: url(../../assets/images/HERO-BG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+    // header
+
+    header {
+      font-family: "Montserrat";
+      background: transparent;
+      .part-header {
+        padding: 24px 32px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .flights {
+          display: flex;
+
+          .flight {
+            display: flex;
+            align-items: center;
+            margin-right: 4px;
+            color: #fff;
+            margin-right: 32px;
+
+            i {
+              margin-right: 4px;
+            }
+            .about-flight {
+              font-size: 14px;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+        }
+        .registration {
+          .login {
+            color: #fff;
+            font-size: 14px;
+            background-color: transparent;
+            font-weight: 600;
+            padding: 10px 24px;
+            transition: 0.2s;
+            &:hover {
+              background: #fff;
+              color: #000;
+              border-radius: 8px;
+            }
+          }
+          .sign-up {
+            color: #fff;
+            background-color: transparent;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+            padding: 10px 24px;
+            &:hover {
+              background: #fff;
+              color: #000;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+    // header end
+
+    h3 {
+      font-size: 45px;
+      font-weight: 700;
+      margin-top: 84px;
+    }
+    h1 {
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 700;
+      margin: 1px 0 16px;
+    }
+    p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+    }
+  }
+</style>
