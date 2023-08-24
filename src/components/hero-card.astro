@@ -1,0 +1,63 @@
+---
+import IstanbulIcon from "../assets/icons/istanbul.jpg";
+---
+
+<div class="card">
+    <div class="image">
+        <img src={IstanbulIcon} alt="icon" />
+    </div>
+    <div class="flight-info">
+        <p class="contry">Istanbul, Turkey</p>
+        <div class="info-wrapper">
+            <p class="info">Flights</p>
+            <div class="dot">•</div>
+            <p class="info">Hotels</p>
+            <div class="dot">•</div>
+            <p class="info">Resorts</p>
+        </div>
+    </div>
+</div>
+
+<style lang="scss">
+    @import "../assets/styles/normolize.scss";
+    .card {
+        padding: 16px;
+        display: flex;
+        border-radius: 16px;
+        margin-right: 32px;
+        background: var(--neutrals, #fff);
+        box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+        .image {
+            margin-right: 16px;
+            width: 90px;
+            height: 90px;
+            img {
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+        .flight-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .contry {
+                color: var(--blackish-green, #121);
+                opacity: 0.7;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .info-wrapper {
+                display: flex;
+                gap: 8px;
+                margin-top: 8px;
+                .info {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .dot {
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+</style>

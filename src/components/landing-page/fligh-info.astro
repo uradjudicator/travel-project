@@ -61,14 +61,16 @@
 <style lang="scss">
   @import "../../assets/styles/normolize.scss";
   .flight-info {
-    padding: 16px 32px 32px 32px;
     gap: 32px;
-    border-radius: 16px;
-    background: var(--neutrals, #fff);
-    box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
     position: relative;
     top: -97px;
     z-index: 3;
+    .container{
+      padding: 16px 32px 32px 32px;
+      border-radius: 16px;
+      background: var(--neutrals, #fff);
+      box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+    }
     .wrapper {
       display: flex;
       flex-direction: column;
