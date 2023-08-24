@@ -20,24 +20,24 @@
 
       <div class="inputs">
         <!-- input-info -->
-        <div class="input-info">
+        <div class="input-info-1">
           <p class="text">From - To</p>
           <input type="text" name="" placeholder="Lahore - Karachi" />
           <i class="fa-solid fa-right-left"></i>
         </div>
         <!-- input-info -->
-        <div class="input-info">
+        <div class="input-info-2">
           <p class="text">Trip</p>
           <input type="text" name="" placeholder="Return" />
           <i class="fa-solid fa-chevron-down"></i>
         </div>
         <!-- input-info -->
-        <div class="input-info">
+        <div class="input-info-3">
           <p class="text">Depart- Return</p>
-          <input type="date" name="" placeholder="07 Nov 22 - 13 Nov 22" />
+          <input type="text" name="" placeholder="07 Nov 22 - 13 Nov 22" />
         </div>
         <!-- input-info -->
-        <div class="input-info">
+        <div class="input-info-4">
           <p class="text">Passenger - Class</p>
           <input type="text" name="" placeholder="1 Passenger, Economy" />
         </div>
@@ -66,6 +66,9 @@
     border-radius: 16px;
     background: var(--neutrals, #fff);
     box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+    position: relative;
+    top: -97px;
+    z-index: 3;
     .wrapper {
       display: flex;
       flex-direction: column;
@@ -82,7 +85,6 @@
 
           &:hover {
             border-bottom: 3px solid #8dd3bb;
-            
           }
           p {
             font-size: 16px;
@@ -115,9 +117,74 @@
     .inputs {
       margin: 62px 0 32px;
       display: flex;
+      gap: 24px;
+      .input-info-1 {
+        border: 1px solid #d7e2ee;
+        border-radius: 4px;
+        input {
+          padding: 4px 0 4px 16px;
+        }
+        i {
+          padding: 12px;
+        }
+      }
+      .input-info-2 {
+        border: 1px solid #d7e2ee;
+        border-radius: 4px;
+        input {
+          padding: 4px 0 4px 16px;
+        }
+      }
+      .input-info-3 {
+        width: 324px;
+        border: 1px solid #d7e2ee;
+        border-radius: 4px;
+        input {
+          padding: 8px 0 8px 16px;
+        }
+      }
+      .input-info-4 {
+        width: 324px;
+        border: 1px solid #d7e2ee;
+        border-radius: 4px;
+        input {
+          padding: 8px 0 8px 16px;
+        }
+      }
     }
+
     .additional-buttons {
       display: flex;
+      justify-content: flex-end;
+      .promo-code {
+        margin-right: 24px;
+        display: flex;
+        padding: 8px 16px;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover {
+          border-radius: 4px;
+          background: var(--mint-green, #8dd3bb);
+        }
+        i {
+          margin-right: 4px;
+        }
+      }
+      .seeing-flight {
+        cursor: pointer;
+        display: flex;
+        margin-right: 24px;
+        display: flex;
+        padding: 8px 16px;
+        transition: 0.2s;
+        &:hover {
+          border-radius: 4px;
+          background: var(--mint-green, #8dd3bb);
+        }
+        i {
+          margin-right: 4px;
+        }
+      }
     }
   }
 </style>
