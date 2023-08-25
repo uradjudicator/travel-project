@@ -1,6 +1,7 @@
 ---
 import IstanbulIcon from "../../assets/icons/istanbul.jpg";
-import HeroCard from "../hero-card.astro"
+import HeroCard from "../hero-card.astro";
+import Button from "../button.astro";
 ---
 
 <section class="perfect-trip">
@@ -13,7 +14,7 @@ import HeroCard from "../hero-card.astro"
                     destinations
                 </p>
             </div>
-            <button class="btn">See more places</button>
+            <Button>See more places</Button>
         </div>
         <div class="wrapper">
             <HeroCard />
@@ -49,15 +50,7 @@ import HeroCard from "../hero-card.astro"
                 opacity: 0.75;
                 margin-top: 16px;
             }
-            .btn {
-                font-size: 14px;
-                font-weight: 500;
-                padding: 8px 16px;
-                color: #112211;
-                background: #fff;
-                border: 1px solid #8DD3BB;
-                border-radius: 4px;
-            }
+            
         }
 
         .wrapper{

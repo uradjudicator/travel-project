@@ -1,0 +1,181 @@
+---
+import Button from "../button.astro";
+import Lake from "../../assets/images/lake.jpg";
+---
+
+<section class="reviews">
+    <div class="container">
+        <div class="top-part">
+            <div class="desc">
+                <h2 class="title">Reviews</h2>
+                <p class="text">What people says about Golobe facilities</p>
+            </div>
+            <Button>See All</Button>
+        </div>
+
+        <div class="wrapper">
+            <!-- card -->
+            <div class="card">
+                <h4 class="title">“A real sense of community, nurtured”</h4>
+                <p class="text">
+                    Really appreciate the help and support from the staff during
+                    these tough times. Shoutout to Katie for...
+                </p>
+                <a href="" class="link">View more</a>
+                <div class="stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <p class="user">Olga</p>
+                <p class="studio">Weave Studios – Kai Tak</p>
+                <div class="google">
+                    <i class="fa-brands fa-google"></i>
+                    <p class="google-text">Google</p>
+                </div>
+                <div class="image">
+                    <img src={Lake} alt="" />
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <h4 class="title">
+                    “The facilities are superb. Clean, slick, bright.”
+                </h4>
+                <p class="text">
+                    “A real sense of community, nurtured”Really appreciate the
+                    help and support from the staff...
+                </p>
+                <a href="" class="link">View more</a>
+                <div class="stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <p class="user">Olga</p>
+                <p class="studio">Weave Studios – Kai Tak</p>
+                <div class="google">
+                    <i class="fa-brands fa-google"></i>
+                    <p class="google-text">Google</p>
+                </div>
+                <div class="image">
+                    <img src={Lake} alt="" />
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <h4 class="title">“A real sense of community, nurtured”</h4>
+                <p class="text">
+                    Really appreciate the help and support from the staff during
+                    these tough times. Shoutout to Katie for... 
+                </p>
+                <a href="" class="link">View more</a>
+                <div class="stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                </div>
+                <p class="user">Olga</p>
+                <p class="studio">Weave Studios – Kai Tak</p>
+                <div class="google">
+                    <i class="fa-brands fa-google"></i>
+                    <p class="google-text">Google</p>
+                </div>
+                <div class="image">
+                    <img src={Lake} alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    @import "../../assets/styles/normolize.scss";
+    .reviews {
+        background: #333;
+        .top-part {
+            margin-top: 94px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                font-size: 32px;
+                font-weight: 600;
+            }
+            .text {
+                font-size: 16px;
+                font-weight: 600;
+                color: var(--blackish-green, #121);
+                opacity: 0.75;
+                margin-top: 16px;
+            }
+        }
+        .wrapper {
+            display: flex;
+            margin-top: 40px;
+            .card {
+                padding: 24px;
+                border-radius: 20px;
+                background: var(--neutrals, #fff);
+                box-shadow: 2px 4px 16px 0px rgba(17, 34, 17, 0.1);
+                margin-right: 24px;
+                transition: 0.4s;
+                &:hover{
+                    transform: translate(-2.1rem, -2ex);
+                }
+                .title {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: #112211;
+                }
+                .text {
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 16px 0 12px;
+                    opacity: 0.5;
+                }
+                .link {
+                    color: #112211;
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .stars {
+                    margin: 16px 0 20px;
+                    i {
+                        margin-right: 12px;
+                    }
+                }
+                .user {
+                    color: #112211;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                .studio {
+                    color: #112211;
+                    font-size: 12px;
+                    font-weight: 500;
+                    opacity: 0.5;
+                    margin: 4px 0 16px;
+                }
+                .google {
+                    display: flex;
+                    gap: 8px;
+                    margin-bottom: 45px;
+                    .google-text {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+</style>
