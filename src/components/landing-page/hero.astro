@@ -65,9 +65,12 @@ import BrandLogo from "../../assets/icons/brand-logo.png";
       );
     }
 
-    .container{
+    .container {
       position: relative;
       z-index: 2;
+      width: 100%;
+      max-width: 1262px;
+      padding: 0 15px;
     }
     // header
 
@@ -148,5 +151,22 @@ import BrandLogo from "../../assets/icons/brand-logo.png";
       font-style: normal;
       font-weight: 600;
     }
+  }
+
+  @media (max-width:1185px){}
+
+  @media (max-width:780px){
+    .part-header{
+
+      .brand-logo{
+        display: none;
+      }
+    }
+    h3{
+      font-size: 40px;
+      font-weight: 700;
+    }
+    h1{}
+    p{}
   }
 </style>
