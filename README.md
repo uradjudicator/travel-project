@@ -1,3 +1,6 @@
+## Deploy site:
+https://golobe-flight.netlify.app/
+
 # Astro Starter Kit: Basics
 
 ```
